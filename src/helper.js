@@ -38,11 +38,47 @@ findByName = (str) => {
   }
 
 findAllMatches = (str = '') => {
-  str = str.toUpperCase()
   return Object.values(this.stats).filter(district => {
-    return district.location.includes(str)
+    return district.location.includes(str.toUpperCase())
   })
 }
+
+findAverage = (str) => {
+  let districtData = this.findAllMatches(str)
+  let average = districtData.reduce((average, district) => {
+    let keys = Object.keys(district.stats)
+      keys.forEach(year => {
+       average += district.stats[year]
+    })
+    return Math.round(average/ keys.length *1000)/1000
+  },0)
+  return average
+}
+
+// findAverage = (str) => {
+//   let average = this.findAllMatches(str).reduce((average, district) => {
+//     Object.keys(district.stats).forEach(year => average += district.stats[year])
+//     return Math.round(average/ Object.keys(district.stats).length *1000)/1000
+//   },0)
+//   return average
+// }
+
+compareDistrictAverages = (district1, district2) => {
+  let upperCaseDOne = district1.toUpperCase()
+  let upperCaseDTwo = district2.toUpperCase()
+
+  let dOne = this.findAverage(district1.toUpperCase());
+  let dTwo = this.findAverage(district2.toUpperCase());
+
+  return {
+    [upperCaseDOne]: dOne,
+    [upperCaseDTwo]: dTwo,
+    "compared": Math.round((dOne / dTwo)*1000)/1000 
+  }
+}
+
+
+
 
 
 }
