@@ -4,21 +4,21 @@ import kinderData from '../../data/kindergartners_in_full_day_program.js';
 describe('DistrictRepository iteration 0', () =>  {
   const district = new DistrictRepository(kinderData);
 
-  it.skip('findAverage for ACADEMY 20', () => {
+  it('findAverage for ACADEMY 20', () => {
     expect(district.findAverage('ACADEMY 20')).toBe(.407)
   });
 
-  it.skip('compareDistrictAverages ACADEMY 20 against YUMA SCHOOL DISTRICT 1', () => {
+  it('compaeDistrictAverages ACADEMY 20 against YUMA SCHOOL DISTRICT 1', () => {
     const result =  { "ACADEMY 20": 0.407, "YUMA SCHOOL DISTRICT 1": 0.909, "compared": 0.448 }
     expect(district.compareDistrictAverages('ACADEMY 20', 'YUMA SCHOOL DISTRICT 1')).toEqual(result);
   });
 
-  it.skip('compareDistrictAverages is case insensitive', () => {
+  it('compareDistrictAverages is case insensitive', () => {
     const result =  { "ACADEMY 20": 0.407, "YUMA SCHOOL DISTRICT 1": 0.909, "compared": 0.448 }
     expect(district.compareDistrictAverages('ACADeMY 20', 'YUMA ScHOoL DiStRICT 1')).toEqual(result);
   });
 
-  it.skip('compareDistrictAverages ACADEMY 20 against Colorado', () => {
+  it('compareDistrictAverages ACADEMY 20 against Colorado', () => {
     const result = { "ACADEMY 20": 0.407, "COLORADO": 0.53, "compared": 0.768}
     expect(district.compareDistrictAverages('ACADEMY 20', 'Colorado')).toEqual(result);
   });
