@@ -76,11 +76,4 @@ compareDistrictAverages = (district1, district2) => {
     "compared": Math.round((dOne / dTwo)*1000)/1000 
   }
 }
-
-
-
-
-
 }
-
-
