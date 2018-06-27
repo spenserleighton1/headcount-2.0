@@ -1,0 +1,11 @@
+.card {
+  height: 450px;
+  width: 250px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid gray;
+  margin: 30px;
+}
+
+h3 {
+}
