@@ -55,14 +55,6 @@ findAverage = (str) => {
   return average
 }
 
-// findAverage = (str) => {
-//   let average = this.findAllMatches(str).reduce((average, district) => {
-//     Object.keys(district.stats).forEach(year => average += district.stats[year])
-//     return Math.round(average/ Object.keys(district.stats).length *1000)/1000
-//   },0)
-//   return average
-// }
-
 compareDistrictAverages = (district1, district2) => {
   let upperCaseDOne = district1.toUpperCase()
   let upperCaseDTwo = district2.toUpperCase()
