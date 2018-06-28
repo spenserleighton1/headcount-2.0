@@ -12,12 +12,9 @@ const CardContainer = (props) => {
   })
   return(
     <div>
-    {districtData}
+    { districtData }
     </div>
     )
 }
 
-Card.propTypes = {
-  props: PropTypes.object.isRequired
-}
 export default CardContainer;

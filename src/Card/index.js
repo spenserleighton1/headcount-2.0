@@ -7,17 +7,16 @@ const Card = (props) => {
   return(
     <div className='card'>
     <h3>{props.location}</h3>
+    <ul>
     {Object.keys(props.stats).map((stat, i) => {
-      return <p 
+      return <li 
               key={i}
               style={props.stats[stat] >= 0.5 ? {color: 'red'} : {color: 'green'}}>
               {stat}: {props.stats[stat]}
-              </p>})}
+              </li>})}
+    </ul>
     </div>
     )
 }
 
-Card.propTypes = {
-  props: PropTypes.object.isRequired
-}
 export default Card;
