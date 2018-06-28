@@ -2,10 +2,7 @@ import React, { Component } from 'react';
 import './styles.css'
 
 class Search extends Component {
-  constructor(props) {
-    super(props)
-  }
-
+  
   handleChange = (event) => {
     this.props.findDistrict(event.target.value)
   }

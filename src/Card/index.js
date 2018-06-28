@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 const Card = (props) => {
   // console.log(props)
   return(
-    <div className='card'>
+    <div className='card'
+         onClick={()=> { props.findDistrictByClick(props.location) }}>
     <h3>{props.location}</h3>
     <ul>
     {Object.keys(props.stats).map((stat, i) => {
