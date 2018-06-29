@@ -8,6 +8,8 @@ const DisplayComparedCards = (props) => {
               location={ props.data[district].location }
               stats={ props.data[district].stats }
               key={ i } 
+              selected={ props.data[district].selected }
+              findDistrictByClick={ props.findDistrictByClick }
           />
   })
   return(
