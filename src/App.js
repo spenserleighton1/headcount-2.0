@@ -23,11 +23,13 @@ class App extends Component {
   }
 
   findDistrictByClick = (str) => {
-    //ternary, if in state remove
-    this.setState({ comparedDistricts: district.findAllMatches(str)})
+    const newObject = {...this.state.comparedDistricts, ...district.findAllMatches(str) }
+    const notInState = () => this.setState({ comparedDistricts: newObject})
+      if(Object.keys(this.state.comparedDistricts).length < 2) {
+          notInState()
   }
 
-
+}
 
   render() {
     return (
@@ -35,7 +37,8 @@ class App extends Component {
         <Search 
           findDistrict={ this.findDistrict } />
         <DisplayComparedCards 
-          data={ this.state.comparedDistricts }/>
+          data={ this.state.comparedDistricts }
+          findDistrictByClick={ this.findDistrictByClick }/>
         <CardContainer 
           data={ this.state.districtData }
           findDistrictByClick={ this.findDistrictByClick } />
