@@ -27,4 +27,19 @@ describe('Card', () => {
   it('matches the Snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
+
+  it('should render the correct html', () => {
+    //shallow render a card 
+    //compare rendered to card with expected card
+  })
+
+  it('should render the correct number of html elements', () => {
+    //shallow render a card 
+    //compare number of rendered elements to card with expected number of elements
+  })
+
+  it('should call a method onClick', () => {
+    //shallow render a card 
+    //compare rendered to card with expected card
+  })
 })

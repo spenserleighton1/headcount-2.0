@@ -49,4 +49,11 @@ describe('CardContainer', () => {
     expect(wrapper.find(Card).length).toEqual(2)
   })
 
+  it('should render four cards when passed an array with length of three', () => {
+  })
+
+  it('should render the correct amount of cards', () => {
+    expect(wrapper.find(Card).length).toEqual(2)
+  })
+
 })

@@ -14,7 +14,6 @@ class App extends Component {
     this.state = {
       districtData: district.dataCleaner(kinderData),
       comparedDistricts: {}
-
     }
   }
 
@@ -25,11 +24,10 @@ class App extends Component {
   findDistrictByClick = (str) => {
     const newObject = {...this.state.comparedDistricts, ...district.findAllMatches(str) }
     const notInState = () => this.setState({ comparedDistricts: newObject})
-      if(Object.keys(this.state.comparedDistricts).length < 2) {
+    if(Object.keys(this.state.comparedDistricts).length < 2) {
           notInState()
+    }
   }
-
-}
 
   render() {
     return (

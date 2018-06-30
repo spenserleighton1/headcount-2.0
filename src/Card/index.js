@@ -3,10 +3,8 @@ import './styles.css'
 import PropTypes from 'prop-types';
 
 const Card = (props) => {
-  // console.log(props)
   return(
     <div className='card selectedFalse'
-         // onClick={()=> { props.findDistrictByClick(props.location) }}>
          onClick={()=> { }}>
     <h3>{props.location}</h3>
     <ul>
@@ -19,7 +17,7 @@ const Card = (props) => {
               </li>})}
     </ul>
     </div>
-    )
+  )
 }
 
 export default Card;

@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './styles.css'
 
 class Search extends Component {
-  
   handleChange = (event) => {
     this.props.findDistrict(event.target.value)
   }
@@ -14,7 +13,7 @@ class Search extends Component {
           type="text"
           onChange={ this.handleChange } /> 
       </form>
-      )
+    )
   }
 }
 
