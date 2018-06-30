@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../Card';
 import PropTypes from 'prop-types';
+import './styles.css'
 
 const DisplayComparedCards = (props) => {
   const comparedCards = Object.keys(props.data).map((district, i) => {
@@ -8,7 +9,6 @@ const DisplayComparedCards = (props) => {
               location={ props.data[district].location }
               stats={ props.data[district].stats }
               key={ i } 
-              selected={ props.data[district].selected }
               findDistrictByClick={ props.findDistrictByClick }
           />
   })

@@ -22,14 +22,31 @@ class App extends Component {
     this.setState({ districtData: district.findAllMatches(str) })
   }
 
+
   findDistrictByClick = (str) => {
-    const newObject = {...this.state.comparedDistricts, ...district.findAllMatches(str) }
-    const notInState = () => this.setState({ comparedDistricts: newObject})
-      if(Object.keys(this.state.comparedDistricts).length < 2) {
-          notInState()
-  }
+    let d = district.findByName(str)
+    console.log(district.findAllMatches(str))
+
+    if(!d.selected && Object.keys(this.state.comparedDistricts).length < 2) {
+      d.selected = 'selected'
+      let newObject = {...this.state.comparedDistricts, ...district.findAllMatches(str) }
+      this.setState({ comparedDistricts: newObject})
+    } else if (d.selected && d.location === str) {
+      delete d.selected
+
+      let selected = Object.keys(this.state.comparedDistricts).reduce((acc, district) => {
+        if (this.state.comparedDistricts[district].selected) {
+          acc[this.state.comparedDistricts[district].location] = this.state.comparedDistricts[district]
+        }
+        return acc
+      },{})
+      console.log(selected)
+
+      this.setState({ comparedDistricts: selected})
+    }
 
 }
+
 
   render() {
     return (
