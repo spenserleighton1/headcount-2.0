@@ -28,10 +28,12 @@ class App extends Component {
 
     const compare = (str) => {
       Object.keys(this.state.districtData).forEach(district => {
-        if (str === district) {
-          return this.state.districtData[district].selected = true
-        } else if (str === district && this.state.districtData[district].selected === true) {
+        if (str === district && this.state.districtData[district].selected === true) {
           this.state.districtData[district].selected = false
+          console.log(this.state.districtData[district].selected)
+          return this.state.districtData[district]
+        } else if (str === district) {
+          this.state.districtData[district].selected = true
           console.log(this.state.districtData[district].selected)
           return this.state.districtData[district]
         }
@@ -39,24 +41,21 @@ class App extends Component {
     }
 
     if (!d.selected && Object.keys(this.state.comparedDistricts).length < 2) {
+      this.setState({ comparedDistricts: {...this.state.comparedDistricts, ...district.findAllMatches(str) } })
+      d.selected = true
       this.setState({ districtData: {...this.state.districtData, ...compare(str)}})
 
-      d.selected = true
-      let newObject = {...this.state.comparedDistricts, ...district.findAllMatches(str) }
-      this.setState({ comparedDistricts: newObject })
-    } else if (d.selected && d.location === str) {
-
+    } else if (d.selected === true && d.location === str) {
       d.selected = false
-
       let selected = Object.keys(this.state.comparedDistricts).reduce((acc, district) => {
         if (this.state.comparedDistricts[district].selected) {
           acc[this.state.comparedDistricts[district].location] = this.state.comparedDistricts[district]
         }
+        this.setState({ comparedDistricts: acc})
         return acc
       },{})
-      this.setState({ comparedDistricts: selected})
+      this.setState({ districtData: {...this.state.districtData, ...compare(str)}})
     }
-
 }
 
 
