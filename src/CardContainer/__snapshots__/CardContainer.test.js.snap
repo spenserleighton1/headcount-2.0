@@ -58,7 +58,7 @@ ShallowWrapper {
         <Card
           findDistrictByClick={undefined}
           location="COLORADO"
-          selected={undefined}
+          select={undefined}
           stats={
                     Object {
                               "2004": 0.24,
@@ -78,7 +78,7 @@ ShallowWrapper {
         <Card
           findDistrictByClick={undefined}
           location="ACADEMY 20"
-          selected={undefined}
+          select={undefined}
           stats={
                     Object {
                               "2004": 0.302,
@@ -106,7 +106,7 @@ ShallowWrapper {
         "props": Object {
           "findDistrictByClick": undefined,
           "location": "COLORADO",
-          "selected": undefined,
+          "select": undefined,
           "stats": Object {
             "2004": 0.24,
             "2005": 0.278,
@@ -132,7 +132,7 @@ ShallowWrapper {
         "props": Object {
           "findDistrictByClick": undefined,
           "location": "ACADEMY 20",
-          "selected": undefined,
+          "select": undefined,
           "stats": Object {
             "2004": 0.302,
             "2005": 0.267,
@@ -164,7 +164,7 @@ ShallowWrapper {
           <Card
             findDistrictByClick={undefined}
             location="COLORADO"
-            selected={undefined}
+            select={undefined}
             stats={
                         Object {
                                     "2004": 0.24,
@@ -184,7 +184,7 @@ ShallowWrapper {
           <Card
             findDistrictByClick={undefined}
             location="ACADEMY 20"
-            selected={undefined}
+            select={undefined}
             stats={
                         Object {
                                     "2004": 0.302,
@@ -212,7 +212,7 @@ ShallowWrapper {
           "props": Object {
             "findDistrictByClick": undefined,
             "location": "COLORADO",
-            "selected": undefined,
+            "select": undefined,
             "stats": Object {
               "2004": 0.24,
               "2005": 0.278,
@@ -238,7 +238,7 @@ ShallowWrapper {
           "props": Object {
             "findDistrictByClick": undefined,
             "location": "ACADEMY 20",
-            "selected": undefined,
+            "select": undefined,
             "stats": Object {
               "2004": 0.302,
               "2005": 0.267,
