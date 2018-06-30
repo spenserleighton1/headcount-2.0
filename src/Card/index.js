@@ -2,10 +2,10 @@ import React from 'react';
 import './styles.css'
 import PropTypes from 'prop-types';
 
+
 const Card = (props) => {
-  // console.log(props)
   return(
-    <div className='card'
+    <div className={`card${props.select ? ' select' : ''}`}
          onClick={()=> { props.findDistrictByClick(props.location) }}>
     <h3>{props.location}</h3>
     <ul>

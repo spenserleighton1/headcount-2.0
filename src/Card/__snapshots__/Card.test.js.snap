@@ -40,7 +40,6 @@ ShallowWrapper {
 </h3>,
         <ul>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "green",
@@ -52,7 +51,6 @@ ShallowWrapper {
                     0.24
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "green",
@@ -64,7 +62,6 @@ ShallowWrapper {
                     0.278
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "green",
@@ -76,7 +73,6 @@ ShallowWrapper {
                     0.337
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "green",
@@ -88,7 +84,6 @@ ShallowWrapper {
                     0.395
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "red",
@@ -100,7 +95,6 @@ ShallowWrapper {
                     0.536
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "red",
@@ -112,7 +106,6 @@ ShallowWrapper {
                     0.598
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "red",
@@ -124,7 +117,6 @@ ShallowWrapper {
                     0.64
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "red",
@@ -136,7 +128,6 @@ ShallowWrapper {
                     0.672
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "red",
@@ -148,7 +139,6 @@ ShallowWrapper {
                     0.695
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "red",
@@ -160,7 +150,6 @@ ShallowWrapper {
                     0.703
           </li>
           <li
-                    selected={undefined}
                     style={
                               Object {
                                         "color": "red",
@@ -196,7 +185,6 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "green",
@@ -208,7 +196,6 @@ ShallowWrapper {
               0.24
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "green",
@@ -220,7 +207,6 @@ ShallowWrapper {
               0.278
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "green",
@@ -232,7 +218,6 @@ ShallowWrapper {
               0.337
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "green",
@@ -244,7 +229,6 @@ ShallowWrapper {
               0.395
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "red",
@@ -256,7 +240,6 @@ ShallowWrapper {
               0.536
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "red",
@@ -268,7 +251,6 @@ ShallowWrapper {
               0.598
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "red",
@@ -280,7 +262,6 @@ ShallowWrapper {
               0.64
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "red",
@@ -292,7 +273,6 @@ ShallowWrapper {
               0.672
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "red",
@@ -304,7 +284,6 @@ ShallowWrapper {
               0.695
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "red",
@@ -316,7 +295,6 @@ ShallowWrapper {
               0.703
 </li>,
             <li
-              selected={undefined}
               style={
                             Object {
                                           "color": "red",
@@ -341,7 +319,6 @@ ShallowWrapper {
                 ": ",
                 0.24,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "green",
               },
@@ -364,7 +341,6 @@ ShallowWrapper {
                 ": ",
                 0.278,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "green",
               },
@@ -387,7 +363,6 @@ ShallowWrapper {
                 ": ",
                 0.337,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "green",
               },
@@ -410,7 +385,6 @@ ShallowWrapper {
                 ": ",
                 0.395,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "green",
               },
@@ -433,7 +407,6 @@ ShallowWrapper {
                 ": ",
                 0.536,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "red",
               },
@@ -456,7 +429,6 @@ ShallowWrapper {
                 ": ",
                 0.598,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "red",
               },
@@ -479,7 +451,6 @@ ShallowWrapper {
                 ": ",
                 0.64,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "red",
               },
@@ -502,7 +473,6 @@ ShallowWrapper {
                 ": ",
                 0.672,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "red",
               },
@@ -525,7 +495,6 @@ ShallowWrapper {
                 ": ",
                 0.695,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "red",
               },
@@ -548,7 +517,6 @@ ShallowWrapper {
                 ": ",
                 0.703,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "red",
               },
@@ -571,7 +539,6 @@ ShallowWrapper {
                 ": ",
                 0.741,
               ],
-              "selected": undefined,
               "style": Object {
                 "color": "red",
               },
@@ -602,7 +569,6 @@ ShallowWrapper {
 </h3>,
           <ul>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "green",
@@ -614,7 +580,6 @@ ShallowWrapper {
                         0.24
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "green",
@@ -626,7 +591,6 @@ ShallowWrapper {
                         0.278
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "green",
@@ -638,7 +602,6 @@ ShallowWrapper {
                         0.337
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "green",
@@ -650,7 +613,6 @@ ShallowWrapper {
                         0.395
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "red",
@@ -662,7 +624,6 @@ ShallowWrapper {
                         0.536
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "red",
@@ -674,7 +635,6 @@ ShallowWrapper {
                         0.598
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "red",
@@ -686,7 +646,6 @@ ShallowWrapper {
                         0.64
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "red",
@@ -698,7 +657,6 @@ ShallowWrapper {
                         0.672
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "red",
@@ -710,7 +668,6 @@ ShallowWrapper {
                         0.695
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "red",
@@ -722,7 +679,6 @@ ShallowWrapper {
                         0.703
             </li>
             <li
-                        selected={undefined}
                         style={
                                     Object {
                                                 "color": "red",
@@ -758,7 +714,6 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "green",
@@ -770,7 +725,6 @@ ShallowWrapper {
                 0.24
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "green",
@@ -782,7 +736,6 @@ ShallowWrapper {
                 0.278
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "green",
@@ -794,7 +747,6 @@ ShallowWrapper {
                 0.337
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "green",
@@ -806,7 +758,6 @@ ShallowWrapper {
                 0.395
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "red",
@@ -818,7 +769,6 @@ ShallowWrapper {
                 0.536
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "red",
@@ -830,7 +780,6 @@ ShallowWrapper {
                 0.598
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "red",
@@ -842,7 +791,6 @@ ShallowWrapper {
                 0.64
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "red",
@@ -854,7 +802,6 @@ ShallowWrapper {
                 0.672
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "red",
@@ -866,7 +813,6 @@ ShallowWrapper {
                 0.695
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "red",
@@ -878,7 +824,6 @@ ShallowWrapper {
                 0.703
 </li>,
               <li
-                selected={undefined}
                 style={
                                 Object {
                                                 "color": "red",
@@ -903,7 +848,6 @@ ShallowWrapper {
                   ": ",
                   0.24,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "green",
                 },
@@ -926,7 +870,6 @@ ShallowWrapper {
                   ": ",
                   0.278,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "green",
                 },
@@ -949,7 +892,6 @@ ShallowWrapper {
                   ": ",
                   0.337,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "green",
                 },
@@ -972,7 +914,6 @@ ShallowWrapper {
                   ": ",
                   0.395,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "green",
                 },
@@ -995,7 +936,6 @@ ShallowWrapper {
                   ": ",
                   0.536,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "red",
                 },
@@ -1018,7 +958,6 @@ ShallowWrapper {
                   ": ",
                   0.598,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "red",
                 },
@@ -1041,7 +980,6 @@ ShallowWrapper {
                   ": ",
                   0.64,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "red",
                 },
@@ -1064,7 +1002,6 @@ ShallowWrapper {
                   ": ",
                   0.672,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "red",
                 },
@@ -1087,7 +1024,6 @@ ShallowWrapper {
                   ": ",
                   0.695,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "red",
                 },
@@ -1110,7 +1046,6 @@ ShallowWrapper {
                   ": ",
                   0.703,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "red",
                 },
@@ -1133,7 +1068,6 @@ ShallowWrapper {
                   ": ",
                   0.741,
                 ],
-                "selected": undefined,
                 "style": Object {
                   "color": "red",
                 },
