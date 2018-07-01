@@ -5,42 +5,48 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <DisplayComparedCards
+    compareDistrictAverages={[Function]}
     data={
         Object {
-            "ACADEMY 20": Object {
-              "location": "ACADEMY 20",
-              "stats": Object {
-                "2004": 0.302,
-                "2005": 0.267,
-                "2006": 0.354,
-                "2007": 0.392,
-                "2008": 0.385,
-                "2009": 0.39,
-                "2010": 0.436,
-                "2011": 0.489,
-                "2012": 0.479,
-                "2013": 0.488,
-                "2014": 0.49,
+            "data": Object {
+              "ACADEMY 20": Object {
+                "location": "ACADEMY 20",
+                "selected": true,
+                "stats": Object {
+                  "2004": 0.302,
+                  "2005": 0.267,
+                  "2006": 0.354,
+                  "2007": 0.392,
+                  "2008": 0.385,
+                  "2009": 0.39,
+                  "2010": 0.436,
+                  "2011": 0.489,
+                  "2012": 0.479,
+                  "2013": 0.488,
+                  "2014": 0.49,
+                },
               },
-            },
-            "COLORADO": Object {
-              "location": "COLORADO",
-              "stats": Object {
-                "2004": 0.24,
-                "2005": 0.278,
-                "2006": 0.337,
-                "2007": 0.395,
-                "2008": 0.536,
-                "2009": 0.598,
-                "2010": 0.64,
-                "2011": 0.672,
-                "2012": 0.695,
-                "2013": 0.703,
-                "2014": 0.741,
+              "COLORADO": Object {
+                "location": "COLORADO",
+                "selected": true,
+                "stats": Object {
+                  "2004": 0.24,
+                  "2005": 0.278,
+                  "2006": 0.337,
+                  "2007": 0.395,
+                  "2008": 0.536,
+                  "2009": 0.598,
+                  "2010": 0.64,
+                  "2011": 0.672,
+                  "2012": 0.695,
+                  "2013": 0.703,
+                  "2014": 0.741,
+                },
               },
             },
           }
     }
+    findDistrictByClick={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -56,44 +62,11 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Card
-          findDistrictByClick={undefined}
-          location="COLORADO"
+          compareDistrictAverages={[Function]}
+          findDistrictByClick={[Function]}
+          location={undefined}
           select={undefined}
-          stats={
-                    Object {
-                              "2004": 0.24,
-                              "2005": 0.278,
-                              "2006": 0.337,
-                              "2007": 0.395,
-                              "2008": 0.536,
-                              "2009": 0.598,
-                              "2010": 0.64,
-                              "2011": 0.672,
-                              "2012": 0.695,
-                              "2013": 0.703,
-                              "2014": 0.741,
-                            }
-          }
-/>,
-        <Card
-          findDistrictByClick={undefined}
-          location="ACADEMY 20"
-          select={undefined}
-          stats={
-                    Object {
-                              "2004": 0.302,
-                              "2005": 0.267,
-                              "2006": 0.354,
-                              "2007": 0.392,
-                              "2008": 0.385,
-                              "2009": 0.39,
-                              "2010": 0.436,
-                              "2011": 0.489,
-                              "2012": 0.479,
-                              "2013": 0.488,
-                              "2014": 0.49,
-                            }
-          }
+          stats={undefined}
 />,
       ],
     },
@@ -104,48 +77,11 @@ ShallowWrapper {
         "key": "0",
         "nodeType": "function",
         "props": Object {
-          "findDistrictByClick": undefined,
-          "location": "COLORADO",
+          "compareDistrictAverages": [Function],
+          "findDistrictByClick": [Function],
+          "location": undefined,
           "select": undefined,
-          "stats": Object {
-            "2004": 0.24,
-            "2005": 0.278,
-            "2006": 0.337,
-            "2007": 0.395,
-            "2008": 0.536,
-            "2009": 0.598,
-            "2010": 0.64,
-            "2011": 0.672,
-            "2012": 0.695,
-            "2013": 0.703,
-            "2014": 0.741,
-          },
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": "1",
-        "nodeType": "function",
-        "props": Object {
-          "findDistrictByClick": undefined,
-          "location": "ACADEMY 20",
-          "select": undefined,
-          "stats": Object {
-            "2004": 0.302,
-            "2005": 0.267,
-            "2006": 0.354,
-            "2007": 0.392,
-            "2008": 0.385,
-            "2009": 0.39,
-            "2010": 0.436,
-            "2011": 0.489,
-            "2012": 0.479,
-            "2013": 0.488,
-            "2014": 0.49,
-          },
+          "stats": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -162,44 +98,11 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Card
-            findDistrictByClick={undefined}
-            location="COLORADO"
+            compareDistrictAverages={[Function]}
+            findDistrictByClick={[Function]}
+            location={undefined}
             select={undefined}
-            stats={
-                        Object {
-                                    "2004": 0.24,
-                                    "2005": 0.278,
-                                    "2006": 0.337,
-                                    "2007": 0.395,
-                                    "2008": 0.536,
-                                    "2009": 0.598,
-                                    "2010": 0.64,
-                                    "2011": 0.672,
-                                    "2012": 0.695,
-                                    "2013": 0.703,
-                                    "2014": 0.741,
-                                  }
-            }
-/>,
-          <Card
-            findDistrictByClick={undefined}
-            location="ACADEMY 20"
-            select={undefined}
-            stats={
-                        Object {
-                                    "2004": 0.302,
-                                    "2005": 0.267,
-                                    "2006": 0.354,
-                                    "2007": 0.392,
-                                    "2008": 0.385,
-                                    "2009": 0.39,
-                                    "2010": 0.436,
-                                    "2011": 0.489,
-                                    "2012": 0.479,
-                                    "2013": 0.488,
-                                    "2014": 0.49,
-                                  }
-            }
+            stats={undefined}
 />,
         ],
       },
@@ -210,48 +113,11 @@ ShallowWrapper {
           "key": "0",
           "nodeType": "function",
           "props": Object {
-            "findDistrictByClick": undefined,
-            "location": "COLORADO",
+            "compareDistrictAverages": [Function],
+            "findDistrictByClick": [Function],
+            "location": undefined,
             "select": undefined,
-            "stats": Object {
-              "2004": 0.24,
-              "2005": 0.278,
-              "2006": 0.337,
-              "2007": 0.395,
-              "2008": 0.536,
-              "2009": 0.598,
-              "2010": 0.64,
-              "2011": 0.672,
-              "2012": 0.695,
-              "2013": 0.703,
-              "2014": 0.741,
-            },
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": "1",
-          "nodeType": "function",
-          "props": Object {
-            "findDistrictByClick": undefined,
-            "location": "ACADEMY 20",
-            "select": undefined,
-            "stats": Object {
-              "2004": 0.302,
-              "2005": 0.267,
-              "2006": 0.354,
-              "2007": 0.392,
-              "2008": 0.385,
-              "2009": 0.39,
-              "2010": 0.436,
-              "2011": 0.489,
-              "2012": 0.479,
-              "2013": 0.488,
-              "2014": 0.49,
-            },
+            "stats": undefined,
           },
           "ref": null,
           "rendered": null,

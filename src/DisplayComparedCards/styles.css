@@ -1,3 +1,5 @@
-.test {
-  color: yellow;
+.comparedCards {
+  float: right;
+  width: 250px;
+  border: 2px solid blue;
 }

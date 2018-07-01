@@ -22,41 +22,40 @@ class App extends Component {
     this.setState({ districtData: district.findAllMatches(str) })
   }
 
+  // compareDistrictAverages
+
 
   findDistrictByClick = (str) => {
+    console.log(this.state.comparedDistricts)
     let d = district.findByName(str)
 
     const compare = (str) => {
       Object.keys(this.state.districtData).forEach(district => {
-        if (str === district) {
+        if (str === district && this.state.districtData[district].selected === true) {
+          return this.state.districtData[district].selected = false
+        } else if (str === district) {
           return this.state.districtData[district].selected = true
-        } else if (str === district && this.state.districtData[district].selected === true) {
-          this.state.districtData[district].selected = false
-          console.log(this.state.districtData[district].selected)
-          return this.state.districtData[district]
         }
       })
     }
 
     if (!d.selected && Object.keys(this.state.comparedDistricts).length < 2) {
-      this.setState({ districtData: {...this.state.districtData, ...compare(str)}})
-
       d.selected = true
-      let newObject = {...this.state.comparedDistricts, ...district.findAllMatches(str) }
-      this.setState({ comparedDistricts: newObject })
-    } else if (d.selected && d.location === str) {
 
+      this.setState({ comparedDistricts: {...this.state.comparedDistricts, ...district.findAllMatches(str) } })
+      this.setState({ districtData: {...this.state.districtData, ...compare(str)}})
+    } else if (d.selected === true && d.location === str) {
       d.selected = false
 
-      let selected = Object.keys(this.state.comparedDistricts).reduce((acc, district) => {
+      Object.keys(this.state.comparedDistricts).reduce((acc, district) => {
         if (this.state.comparedDistricts[district].selected) {
           acc[this.state.comparedDistricts[district].location] = this.state.comparedDistricts[district]
         }
+        this.setState({ comparedDistricts: acc})
         return acc
       },{})
-      this.setState({ comparedDistricts: selected})
+      this.setState({ districtData: {...this.state.districtData, ...compare(str)}})
     }
-
 }
 
 
@@ -64,10 +63,12 @@ class App extends Component {
     return (
       <div>
         <Search 
-          findDistrict={ this.findDistrict } />
+          findDistrict={ this.findDistrict } 
+          findDistrictByClick={ this.findDistrictByClick } />
         <DisplayComparedCards 
           data={ this.state.comparedDistricts }
-          findDistrictByClick={ this.findDistrictByClick }/>
+          findDistrictByClick={ this.findDistrictByClick }
+          compareDistrictAverages={ district.compareDistrictAverages } />
         <CardContainer 
           data={ this.state.districtData }
           findDistrictByClick={ this.findDistrictByClick } />
