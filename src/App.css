@@ -1,1 +1,23 @@
 /*APP COMPONENT RELATED CSS GOES HERE*/
+div {
+  background-color: #A8DADC;
+}
+
+input {
+  height: 35px;
+  width: 300px;
+  font-size: 35px;
+  color: #BBBDF6;
+}
+
+input::placeholder {
+  font-size: 25px;
+  color: #553A41;
+}
+
+.header {
+  color: #457B9D;
+  text-align: center;
+  font-size: 70px;
+  font-family: Times New Roman;
+}

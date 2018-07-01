@@ -1,10 +1,11 @@
 .card {
-  height: 300px;
+  height: 350px;
   width: 250px;
+  font-size: 18px;
   display: inline-block;
   text-align: center;
-  border: 1px solid gray;
-  margin: 30px;
+  border: 1px solid #F1FAEE;
+  margin-left: 4%;
 }
 
 ul {
@@ -13,5 +14,10 @@ ul {
 }
 
 .select {
-  border: 3px solid blue;
+  border: 3px solid #457B9D;
+}
+
+h3 {
+  color: #457B9D;
+  font-size: 22px;
 }
