@@ -5,6 +5,7 @@ import { shallow } from 'enzyme';
 describe('Card', () => {
   let wrapper;
   let mockData;
+  let mockFn
 
   beforeEach(() => {
     mockData = {
@@ -20,11 +21,18 @@ describe('Card', () => {
               '2013': 0.703,
               '2014': 0.741 }
 
+    mockFn = jest.fn()          
     wrapper = shallow(<Card location={ 'COLORADO' }
-                            stats={ mockData } />)
+                            stats={ mockData }
+                            findDistrictByClick={ mockFn } />)
   })
 
   it('matches the Snapshot', () => {
     expect(wrapper).toMatchSnapshot()
+  })
+
+  it('should call the findDistrictByClick function when the card is clicked one', () => {
+    wrapper.find('.card').simulate('click')
+    expect(mockFn).toBeCalled();
   })
 })

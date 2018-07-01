@@ -9,7 +9,7 @@ describe('DisplayComparedCards', () => {
   let mockFn;
 
   beforeEach(() => {
-    mockData = { COLORADO: 
+    mockData = { data: { 'COLORADO': 
          { location: 'COLORADO',
            selected: true,
            stats: 
@@ -38,7 +38,9 @@ describe('DisplayComparedCards', () => {
               '2011': 0.489,
               '2012': 0.479,
               '2013': 0.488,
-              '2014': 0.49 } } }
+              '2014': 0.49 } } 
+            } 
+         }
 
 
   mockFn = jest.fn()
@@ -52,7 +54,7 @@ describe('DisplayComparedCards', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
-  // it('should render the correct amount of cards', () => {
-  //   expect(wrapper.find(Card).length).toEqual(2)
-  // })
+  it('should render the correct amount of cards', () => {
+    expect(wrapper.find(Card).length).toEqual(1)
+  })
 })
