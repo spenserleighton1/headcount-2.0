@@ -12,7 +12,7 @@ const Card = (props) => {
     {Object.keys(props.stats).map((stat, i) => {
       return <li 
               key={i}
-              style={props.stats[stat] >= 0.5 ? {color: 'red'} : {color: 'green'}}>
+              style={props.stats[stat] >= 0.5 ? {color: '#fff'} : {color: '#1D3557'}}>
               {stat}: {props.stats[stat]}
               </li>})}
     </ul>
