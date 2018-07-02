@@ -17,6 +17,7 @@ const DisplayComparedCards = (props) => {
    
   const dataToCompare = Object.keys(props.data)
 
+
   if(dataToCompare.length === 2) {
     const data = props.compareDistrictAverages(dataToCompare[0], dataToCompare[1])
     return(

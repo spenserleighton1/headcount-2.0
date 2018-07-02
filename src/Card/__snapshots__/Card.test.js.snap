@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Card
     findDistrictByClick={[Function]}
     location="COLORADO"
+    selected={false}
     stats={
         Object {
             "2004": 0.24,
@@ -163,7 +164,7 @@ ShallowWrapper {
           </li>
 </ul>,
       ],
-      "className": "card",
+      "className": "card ",
       "onClick": [Function],
     },
     "ref": null,
@@ -692,7 +693,7 @@ ShallowWrapper {
             </li>
 </ul>,
         ],
-        "className": "card",
+        "className": "card ",
         "onClick": [Function],
       },
       "ref": null,

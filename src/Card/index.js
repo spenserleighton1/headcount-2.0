@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 
 const Card = (props) => {
   return(
-    <div className={`card${props.select ? ' select' : ''}`}
+    <div className={`card ${props.select ? ' select' : ''}`}
          onClick={()=> { props.findDistrictByClick(props.location) }}>
     <h3>{props.location}</h3>
     <ul>
