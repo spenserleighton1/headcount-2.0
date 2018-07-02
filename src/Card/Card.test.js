@@ -41,5 +41,4 @@ describe('Card', () => {
   it('should have a className of selected set at default to false', () => {
     expect(wrapper.is('.selected')).toEqual(false);
   });
-
 });
