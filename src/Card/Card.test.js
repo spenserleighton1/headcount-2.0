@@ -24,7 +24,8 @@ describe('Card', () => {
     mockFn = jest.fn()          
     wrapper = shallow(<Card location={ 'COLORADO' }
                             stats={ mockData }
-                            findDistrictByClick={ mockFn } />)
+                            findDistrictByClick={ mockFn }
+                            selected={ false } />)
   })
 
   it('matches the Snapshot', () => {
@@ -35,4 +36,14 @@ describe('Card', () => {
     wrapper.find('.card').simulate('click')
     expect(mockFn).toBeCalled();
   })
+
+  it('should have a className of selected set at default to false', () => {
+    expect(wrapper.is('.selected')).toEqual(false);
+  })
+
+  // it('should have a className selected set as true when findDistrictByClick is called', () => {
+  //   wrapper.find('.card').simulate('click')
+  //   expect(wrapper.is('selected')).toEqual(true);
+  // })
+
 })

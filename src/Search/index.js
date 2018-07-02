@@ -7,16 +7,11 @@ class Search extends Component {
     this.props.findDistrict(event.target.value)
   }
 
-  handleSublit = (event) => {
-    event.preventDefault()
-    console.log(event)
-    this.props.findDistrictByClick(event.target.value)
-  }
-
   render() {
     return (
-      <form onSubmit={ (event) => { this.handleSublit } }>
+      <form>
         <input
+          className="input-form"
           type="text"
           onChange={ this.handleChange } /> 
       </form>

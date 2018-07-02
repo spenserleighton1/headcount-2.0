@@ -20,8 +20,10 @@ ShallowWrapper {
       "children": Array [
         <Search
           findDistrict={[Function]}
+          findDistrictByClick={[Function]}
 />,
         <DisplayComparedCards
+          compareDistrictAverages={[Function]}
           data={Object {}}
           findDistrictByClick={[Function]}
 />,
@@ -2938,6 +2940,7 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "findDistrict": [Function],
+          "findDistrictByClick": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -2948,6 +2951,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "compareDistrictAverages": [Function],
           "data": Object {},
           "findDistrictByClick": [Function],
         },
@@ -5876,8 +5880,10 @@ ShallowWrapper {
         "children": Array [
           <Search
             findDistrict={[Function]}
+            findDistrictByClick={[Function]}
 />,
           <DisplayComparedCards
+            compareDistrictAverages={[Function]}
             data={Object {}}
             findDistrictByClick={[Function]}
 />,
@@ -8794,6 +8800,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "findDistrict": [Function],
+            "findDistrictByClick": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -8804,6 +8811,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "compareDistrictAverages": [Function],
             "data": Object {},
             "findDistrictByClick": [Function],
           },
