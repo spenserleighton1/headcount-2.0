@@ -1,7 +1,7 @@
 import React from 'react';
-import DisplayComparedCards from './index.js'
+import DisplayComparedCards from './index.js';
 import { shallow } from 'enzyme';
-import Card from '../Card'
+import Card from '../Card';
 
 describe('DisplayComparedCards', () => {
   let wrapper;
@@ -42,12 +42,11 @@ describe('DisplayComparedCards', () => {
             } 
          }
 
-
-  mockFn = jest.fn()
-  wrapper = shallow(<DisplayComparedCards data={ mockData }
-                                          compareDistrictAverages={ mockFn }
-                                          findDistrictByClick={ mockFn } 
-                                          />)
+    mockFn = jest.fn()
+    wrapper = shallow(<DisplayComparedCards data={ mockData }
+                                            compareDistrictAverages={ mockFn }
+                                            findDistrictByClick={ mockFn } 
+                                            />)
 
   })
   it('matches the Snapshot', () => {
