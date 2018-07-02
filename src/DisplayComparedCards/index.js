@@ -24,6 +24,7 @@ const DisplayComparedCards = (props) => {
         <div>
           { comparedCards }
           <div className='comparedCards'>
+            <p> Comparison: </p>
             <p>{ dataToCompare[0] }: { data[dataToCompare[0]] }</p>
             <p>{ dataToCompare[1] }: { data[dataToCompare[1]] }</p>
             <p>{ 'Compared' }: { data['compared'] }</p>
@@ -37,6 +38,10 @@ const DisplayComparedCards = (props) => {
       { comparedCards }
     </div>
     )
+}
+
+Card.propTypes = {
+
 }
 
 export default DisplayComparedCards;

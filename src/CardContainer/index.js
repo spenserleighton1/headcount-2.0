@@ -19,4 +19,8 @@ const CardContainer = (props) => {
     )
 }
 
+Card.propTypes = {
+
+}
+
 export default CardContainer;

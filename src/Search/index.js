@@ -11,9 +11,14 @@ class Search extends Component {
     return (
       <form>
         <input
+
           className="input-form"
+
+          placeholder='Search for a district'
+
           type="text"
           onChange={ this.handleChange } /> 
+        <h1 className='header'>HeadCount 2.0</h1>
       </form>
       )
   }
