@@ -41,7 +41,7 @@ const DisplayComparedCards = (props) => {
 }
 
 Card.propTypes = {
-
+  props: PropTypes.object.isRequired
 }
 
 export default DisplayComparedCards;

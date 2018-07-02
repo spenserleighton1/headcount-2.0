@@ -39,7 +39,6 @@ describe('CardContainer', () => {
 
 
   wrapper = shallow(<CardContainer data={ mockData } />)
-
   })
   it('matches the Snapshot', () => {
     expect(wrapper).toMatchSnapshot()
@@ -48,5 +47,4 @@ describe('CardContainer', () => {
   it('should render the correct amount of cards', () => {
     expect(wrapper.find(Card).length).toEqual(2)
   })
-
 })
