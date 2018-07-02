@@ -9,7 +9,7 @@ describe('Card', () => {
 
   beforeEach(() => {
     mockData = {
-             '2004': 0.24,
+              '2004': 0.24,
               '2005': 0.278,
               '2006': 0.337,
               '2007': 0.395,
@@ -19,7 +19,8 @@ describe('Card', () => {
               '2011': 0.672,
               '2012': 0.695,
               '2013': 0.703,
-              '2014': 0.741 }
+              '2014': 0.741 
+              }
 
     mockFn = jest.fn()          
     wrapper = shallow(<Card location={ 'COLORADO' }
@@ -40,10 +41,4 @@ describe('Card', () => {
   it('should have a className of selected set at default to false', () => {
     expect(wrapper.is('.selected')).toEqual(false);
   })
-
-  // it('should have a className selected set as true when findDistrictByClick is called', () => {
-  //   wrapper.find('.card').simulate('click')
-  //   expect(wrapper.is('selected')).toEqual(true);
-  // })
-
 })

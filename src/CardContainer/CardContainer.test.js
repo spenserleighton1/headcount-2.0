@@ -1,7 +1,7 @@
 import React from 'react';
-import CardContainer from './index.js'
+import CardContainer from './index.js';
 import { shallow } from 'enzyme';
-import Card from '../Card'
+import Card from '../Card';
 
 describe('CardContainer', () => {
   let wrapper;
@@ -22,7 +22,7 @@ describe('CardContainer', () => {
               '2012': 0.695,
               '2013': 0.703,
               '2014': 0.741 } },
-        'ACADEMY 20': 
+    'ACADEMY 20': 
          { location: 'ACADEMY 20',
            stats: 
             { '2004': 0.302,
@@ -35,16 +35,16 @@ describe('CardContainer', () => {
               '2011': 0.489,
               '2012': 0.479,
               '2013': 0.488,
-              '2014': 0.49 }} }
+              '2014': 0.49 }} };
 
+    wrapper = shallow(<CardContainer data={ mockData } />);
+  });
 
-  wrapper = shallow(<CardContainer data={ mockData } />)
-  })
   it('matches the Snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
+    expect(wrapper).toMatchSnapshot();
+  });
 
   it('should render the correct amount of cards', () => {
-    expect(wrapper.find(Card).length).toEqual(2)
-  })
-})
+    expect(wrapper.find(Card).length).toEqual(2);
+  });
+});

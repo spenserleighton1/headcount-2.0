@@ -1,22 +1,20 @@
 import React from 'react';
 import Card from '../Card';
 import PropTypes from 'prop-types';
-import './styles.css'
+import './styles.css';
 
 const DisplayComparedCards = (props) => {
-  const comparedCards = Object.keys(props.data).map((district, i) => {
+  const dataToCompare = Object.keys(props.data);
+  const comparedCards = Object.keys(props.data).map((district, index) => {
     return <Card 
-              location={ props.data[district].location }
-              stats={ props.data[district].stats }
-              key={ i } 
-              select={ props.data[district].selected }
-              findDistrictByClick={ props.findDistrictByClick }
-              compareDistrictAverages={ props.compareDistrictAverages }
-          />
+      location={ props.data[district].location }
+      stats={ props.data[district].stats }
+      key={ index } 
+      select={ props.data[district].selected }
+      findDistrictByClick={ props.findDistrictByClick }
+      compareDistrictAverages={ props.compareDistrictAverages }
+      />
   })
-   
-  const dataToCompare = Object.keys(props.data)
-
 
   if(dataToCompare.length === 2) {
     const data = props.compareDistrictAverages(dataToCompare[0], dataToCompare[1])
@@ -40,8 +38,12 @@ const DisplayComparedCards = (props) => {
     )
 }
 
-Card.propTypes = {
-  props: PropTypes.object.isRequired
-}
+  DisplayComparedCards.propTypes = {
+  findDistrict: PropTypes.func.isRequired,
+  data: PropTypes.object.isRequired,
+  stats: PropTypes.object.isRequired,
+  findDistrictByClick: PropTypes.func.isRequired,
+  compareDistrictAverage: PropTypes.func.isRequired
+};
 
 export default DisplayComparedCards;

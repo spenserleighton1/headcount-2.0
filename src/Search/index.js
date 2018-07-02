@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import './styles.css'
+import './styles.css';
+import PropTypes from 'prop-types';
 
 class Search extends Component {
   
   handleChange = (event) => {
-    this.props.findDistrict(event.target.value)
+    this.props.findDistrict(event.target.value);
   }
 
   render() {
@@ -20,8 +21,12 @@ class Search extends Component {
           onChange={ this.handleChange } /> 
         <h1 className='header'>HeadCount 2.0</h1>
       </form>
-      )
+    );
   }
 }
+
+Search.propTypes = {
+  findDistrict: PropTypes.func.isRequired
+};
 
 export default Search;
