@@ -24,7 +24,7 @@ describe('DisplayComparedCards', () => {
               '2012': 0.695,
               '2013': 0.703,
               '2014': 0.741 } },
-        'ACADEMY 20': 
+    'ACADEMY 20': 
          { location: 'ACADEMY 20',
            selected: true,
            stats: 
@@ -39,21 +39,22 @@ describe('DisplayComparedCards', () => {
               '2012': 0.479,
               '2013': 0.488,
               '2014': 0.49 } } 
-            } 
-         }
+    } 
+    };
 
-    mockFn = jest.fn()
-    wrapper = shallow(<DisplayComparedCards data={ mockData }
-                                            compareDistrictAverages={ mockFn }
-                                            findDistrictByClick={ mockFn } 
-                                            />)
+    mockFn = jest.fn();
+    wrapper = shallow(<DisplayComparedCards 
+      data={ mockData }
+      compareDistrictAverages={ mockFn }
+      findDistrictByClick={ mockFn } 
+    />);
 
-  })
+  });
   it('matches the Snapshot', () => {
-    expect(wrapper).toMatchSnapshot()
-  })
+    expect(wrapper).toMatchSnapshot();
+  });
 
   it('should render the correct amount of cards', () => {
-    expect(wrapper.find(Card).length).toEqual(1)
-  })
-})
+    expect(wrapper.find(Card).length).toEqual(1);
+  });
+});
