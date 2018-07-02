@@ -14,16 +14,12 @@ class App extends Component {
     this.state = {
       districtData: district.dataCleaner(kinderData),
       comparedDistricts: {}
-
     }
   }
 
   findDistrict = (str) => {
     this.setState({ districtData: district.findAllMatches(str) })
   }
-
-  // compareDistrictAverages
-
 
   findDistrictByClick = (str) => {
     console.log(this.state.comparedDistricts)
@@ -57,8 +53,7 @@ class App extends Component {
       this.setState({ districtData: {...this.state.districtData, ...compare(str)}})
     }
 }
-
-
+ 
   render() {
     return (
       <div>

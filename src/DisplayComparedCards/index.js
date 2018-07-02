@@ -39,4 +39,8 @@ const DisplayComparedCards = (props) => {
     )
 }
 
+Card.propTypes = {
+
+}
+
 export default DisplayComparedCards;
