@@ -21,7 +21,7 @@ const Card = (props) => {
 }
 
 Card.propTypes = {
-  props: PropTypes.object
+  props: PropTypes.object.isRequired
 }
 
 export default Card;

@@ -22,13 +22,13 @@ class App extends Component {
     this.setState({ districtData: district.findAllMatches(str) })
   }
 
-findDistrictByClick = (str) => {
+  findDistrictByClick = (str) => {
    let d = district.findByName(str)
 
    if (!d.selected && Object.keys(this.state.comparedDistricts).length < 2) {
      d.selected = true
 
-     this.setState({ comparedDistricts: {...this.state.comparedDistricts, ...district.findAllMatches(str) } })
+     this.setState({ comparedDistricts: {...this.state.comparedDistricts, [d.location]: d } })
      this.setState({ districtData: {...this.state.districtData, [d.location]: d }})
    } else if (d.selected === true && d.location === str) {
      d.selected = false
@@ -42,7 +42,7 @@ findDistrictByClick = (str) => {
      },{})
      this.setState({ districtData: {...this.state.districtData, [d.location]: d }})
    }
-}
+  }
  
   render() {
     return (

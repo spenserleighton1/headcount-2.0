@@ -19,8 +19,8 @@ const CardContainer = (props) => {
     )
 }
 
-Card.propTypes = {
-
+CardContainer.propTypes = {
+  props: PropTypes.object.isRequired
 }
 
 export default CardContainer;
