@@ -88,12 +88,12 @@ describe('app', () => {
               '2014': 0.49 } } 
             } 
          }
-      let renderedApp setState =({
-        districtData: district.dataCleaner(kinderData),
-        comparedDistricts: { selectedCards }, 
-      })
-      let expected = 183;
-      let actual = let actual = 
+      // let renderedAppsetState =({
+      //   districtData: district.dataCleaner(kinderData),
+      //   comparedDistricts: { selectedCards }, 
+      // })
+      // let expected = 183;
+      // let actual = let actual = 
   })
 
   it('should only add two selected cards', () => {
