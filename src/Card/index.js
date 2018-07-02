@@ -20,4 +20,8 @@ const Card = (props) => {
     )
 }
 
+Card.propTypes = {
+  props: PropTypes.object
+}
+
 export default Card;
