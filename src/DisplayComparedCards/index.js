@@ -13,37 +13,37 @@ const DisplayComparedCards = (props) => {
       select={ props.data[district].selected }
       findDistrictByClick={ props.findDistrictByClick }
       compareDistrictAverages={ props.compareDistrictAverages }
-      />
-  })
+    />;
+  });
 
-  if(dataToCompare.length === 2) {
-    const data = props.compareDistrictAverages(dataToCompare[0], dataToCompare[1])
-    return(
-        <div>
-          { comparedCards }
-          <div className='comparedCards'>
-            <p> Comparison: </p>
-            <p>{ dataToCompare[0] }: { data[dataToCompare[0]] }</p>
-            <p>{ dataToCompare[1] }: { data[dataToCompare[1]] }</p>
-            <p>{ 'Compared' }: { data['compared'] }</p>
-          </div>
+  if (dataToCompare.length === 2) {
+    const data = props.compareDistrictAverages(dataToCompare[0], dataToCompare[1]);
+    return (
+      <div>
+        { comparedCards }
+        <div className='comparedCards'>
+          <p> Comparison: </p>
+          <p>{ dataToCompare[0] }: { data[dataToCompare[0]] }</p>
+          <p>{ dataToCompare[1] }: { data[dataToCompare[1]] }</p>
+          <p>{ 'Compared' }: { data['compared'] }</p>
         </div>
-      )
+      </div>
+    );
   }
     
-  return(
+  return (
     <div>
       { comparedCards }
     </div>
-    )
-}
+  );
+};
 
-  DisplayComparedCards.propTypes = {
+DisplayComparedCards.propTypes = {
   findDistrict: PropTypes.func.isRequired,
   data: PropTypes.object.isRequired,
   stats: PropTypes.object.isRequired,
   findDistrictByClick: PropTypes.func.isRequired,
-  compareDistrictAverage: PropTypes.func.isRequired
+  compareDistrictAverages: PropTypes.func.isRequired
 };
 
 export default DisplayComparedCards;
